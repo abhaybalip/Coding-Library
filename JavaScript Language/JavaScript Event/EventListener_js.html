@@ -1,0 +1,55 @@
+<!-- java script -  event listener -->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <pre>
+            The addEventListener() method is used to attach an event handler to a particular element.
+            It does not override the existing event handlers.
+            Syntax
+element.addEventListener(event, function, useCapture);
+useCapture: It is an optional parameter.
+It is a Boolean type value that specifies whether the event is executed in the bubbling or capturing phase.
+Its possible values are true and false. When it is set to true, the event handler executes in the capturing phase.
+When it is set to false, the handler executes in the bubbling phase.
+Its default value is false.
+        </pre>
+        <div id="para1"></div>
+        <br>
+        Button with click action <br>
+        <div id="div1">
+            <input type="button" value="ClickMe" id="button1">
+        </div>
+        <br>
+        <div id="div2">
+            Hover Me
+        </div>
+        <br>
+        <p id="para2"></p>
+    </body>
+</html>
+<!-- css part -->
+<style>
+    #div2{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+</style>
+<!-- JavaScript Part -->
+<script>
+    document.getElementById("para1").innerHTML = "This paragraph is modifoed using java script";
+    document.getElementById("para1").style.color = "red";
+
+    // adding event handler to button element
+    document.getElementById("button1").addEventListener("click",MethodeButton);
+    function MethodeButton(){
+        document.getElementById("div1").innerHTML = "Button is Pressed !"
+    }
+
+    // adding event handler to block
+    document.getElementById("div2")/addEventListener("mouseout",Methode2);
+    function Methode2(){
+        document.getElementById("para2").innerHTML = "Welcome to JavaScript <br>Learn about js event handeling";
+    }
+</script>
