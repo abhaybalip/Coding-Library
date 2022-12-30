@@ -27,16 +27,17 @@
 
     // check if element is present
     var b1 = s1.has('A');
-    println(b1);
+    println("* check if element is present 'A' : "+b1);
     
     // No of data in set
     var count = s1.size;
-    println("No of data : "+count);
+    println("* No of data : "+count);
 
     // set example 2
     s2 = [
         "Name","SurName","Age","Gen"
     ]
+    println("* s2 set : ");
     s2.forEach(
         function(value){
             println(value);
@@ -47,5 +48,6 @@
     for(x of s2.values()){
         text += x;
     }
+    println("* test data : ");
     println(text);
-    println(typeof(text))
+    println(typeof(text));
