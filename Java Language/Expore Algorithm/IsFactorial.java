@@ -1,35 +1,23 @@
 // java - is factorial
-class javaprogram
-{
-    static int factorial(int num)
-    {
+class javaprogram{
+    static int factorial(int num){
         int ans = 1;
-        if(num>=0)
-        {
-            for(int i=1;i<=num;i++)
-            {
+        if(num>=0){
+            for(int i=1;i<=num;i++){
                 ans = ans * i;
             }
         }
-        else 
-        {
+        else{
             System.out.println("Invalid Number");
         }
         return ans;
     }
-    static void isfact(int num)
-    {
-        boolean ans;
+    static void isfact(int num){
         int x = factorial(num);
-        for(int i=1;i<num;i++)
-        {
-            if(x == i)
-            {
-                isfact = true;
-            }
-            else
-            {
-                isfact = false;
+        Boolean ans = false;
+        for(int i=1;i<num;i++){
+            if(x == i){
+                ans = true;
             }
         }
         System.out.println(ans);

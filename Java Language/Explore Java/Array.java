@@ -12,7 +12,9 @@ public class Array {
         
         // data accessing - using index number inside square box
         int num = arr[4];
-
+        System.out.println(num);
         arr[5] = 0;
+
+        sc.close();
     }
 }

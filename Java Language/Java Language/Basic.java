@@ -1,9 +1,7 @@
 // java - Basic
 import java.util.Scanner;
-class coding
-{
-    public static void main(String[] args)
-    {
+class JavaBasic{
+    public static void main(String[] args){
         // printing
         // println() for new line otherwise print() 
         System.out.print("HELLO");
@@ -23,12 +21,16 @@ class coding
         // string ,array
 
         int i = 10;
-        long l = 2.05;   
+        long l = 2;   
         float f = 3.14F;  
         double d = 100.25D;
 
-        String name;
-        int[] array;
+        System.out.println(i+l+f+d);
+
+        String name = "";
+        int[] array = {1,2,3};
+
+        System.out.println(name+array[0]);
 
         // operator :
         // unary ,binary ,trinary
@@ -39,5 +41,7 @@ class coding
         // double to int
         double num = 10;
         int num2 = (int)num;
+        System.out.println("double => int "+num2);
+        sc.close();
     }
 }

@@ -1,35 +1,33 @@
-class programming
-{
-    public static void main (String[] args)
-    {
-        System.out.println("Main Methode Invoked");
-        Dog A = new Dog();
-        A.play();
+// java - Inheritance
+public class Inheritance{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+        Car c = new Car();
+        c.SetData("MYSelf", "Black", 10);
+        c.DisplayData();
     }
 }
-class Animal
-{
-    Animal()
-    {
-        System.out.println("Animal is here");
+// parent class
+class Vehicle{
+    String Owner;
+    String color;
+    float Price;
+    void SetData(String Owner,String color,float Price){
+        this.Owner = Owner;
+        this.color = color;
+        this.Price = Price;
     }
-
-    public void play()
-    {
-        System.out.println("Animal is Playing");
-    }
-}
-class Dog extends Animal
-{
-    Dog()
-    {
-        System.out.println("Dog is Here");
-    }
-    public void play()
-    {
-        System.out.println("Dog is Playing");
+    void DisplayData(){
+        System.out.println("Vehicle Owner : "+this.Owner);
+        System.out.println("Vehicle Detail : \ncolor "+this.color+"\nprice "+this.Price);
     }
 }
-
-// Here we see that constructor of parent methode is also invoked
-// function over-riding takes place
+// child class
+class Car extends Vehicle{
+    // overrides parent class methode
+    @Override
+    void DisplayData(){
+        System.out.println("Car Owner : "+this.Owner);
+        System.out.println("Car Detail : \ncolor "+this.color+"\nprice "+this.Price);
+    }
+}

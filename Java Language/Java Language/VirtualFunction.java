@@ -1,25 +1,14 @@
-class javaprogramming 
-{
-    public static void main(String[] args)
-    {
-        System.out.println("Main methode Invoked");
-        Program my = new Program();
-
-        my.display();
-
+class VirtualFunction{
+    public static void main(String[] args){
+        B b = new B();
+        b.display();
     }
 }
-class programmer
-{
-    void display()
-    {
-        System.out.println("Pragrammer is Running");
-    }
+abstract class A{
+    abstract void display();
 }
-class Program extends programmer
-{
-    void display()
-    {
-        System.out.println("Program is Running");
+class B extends A{
+    public void display(){
+        System.out.println("virtual function is is Running");
     }
 }

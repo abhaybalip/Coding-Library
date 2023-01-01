@@ -1,67 +1,27 @@
-class javaprogram 
-{
-    public static void main(String[] args) 
-    {
-        System.out.println("main methode invoked");
-        sbi a = new sbi();
-        a.declareprofit(1.25F);
+// java - interface
+class Interface{
+    public static void main(String[] args){
+        Square s = new Square(10);
+        System.out.println("Area = "+s.getArea());
+        System.out.println("Perimeter = "+s.getPerimeter());
     }
 }
-interface bank
-{
-    String unit = "BillionDollar";
-    void declareprofit();
+// interface declaration
+interface Shape{
+    int side = 4;
+    public int getPerimeter();
+    public int getArea();
 }
-class sbi implements bank
-{
-    float profit;
-    public void declareprofit(float profit)
-    {
-        this.profit = profit;
-        System.out.println("Profit made this year is "+ profit+"\t"+unit);
+class Square implements Shape{
+    int lenght;
+    Square(int lenght){
+        this.lenght = lenght;
+        System.out.println("square is created");
     }
-} 
-// nested interface
-interface university
-{
-    void results(int year,float result);
-    interface college 
-    {
-        void permission(boolean pms);
+    public int getPerimeter(){
+        return side*lenght;
     }
-}
-class college implements university
-{
-    public void results(int year,float result)
-    {
-        System.out.println("In Education Year "+year+ " college result is "+result+" %");
-    }
-
-    public void permission(boolean pms)
-    {
-        if(pms==true)
-        System.out.println("college has permission");
-        else
-        System.out.println("college has no permission");
-    }
-}
-// interface extension
-interface line 
-{
-    void draw();
-}
-interface circle extends line
-{
-    void stretch();
-}
-class paper implements circle 
-{
-    public void draw()
-    {
-        System.out.println("line drawed");
-    }
-    public void stretch()
-    {
-        System.out.println("circle stretched");
+    public int getArea(){
+        return lenght*lenght;
     }
 }

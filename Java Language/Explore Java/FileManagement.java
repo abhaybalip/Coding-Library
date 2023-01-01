@@ -13,13 +13,13 @@ class FileManagement{
             while((index = fin.read()) != -1){
                 System.out.print((char)index);
             }
+            fin.close();
         }
         catch(Exception e){
             System.out.println("error occured !");
         }
         
         // write into external file
-        
         FileOutputStream fout = new FileOutputStream("test2.txt");
         String txt = "Hello World \nThis file content is written using java file output stram class \nThank You";
         int index = 0;
@@ -27,5 +27,6 @@ class FileManagement{
             fout.write(txt.charAt(index));
             index++;
         }
+        fout.close();
     }
 }
