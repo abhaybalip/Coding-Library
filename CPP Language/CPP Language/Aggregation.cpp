@@ -1,42 +1,34 @@
-// learn c++
-// classes aggregation
+// cpp - Aggregation
 #include<iostream>
-using namespace std;
-class Address
-{
+class Address{
     public:
-    int pincode;
-    string city;
-    void setA(int pincode,string city)
-    {
+    int pin;
+    std::string city,country;
+    void setData(int pin,std::string city,std::string country){
         this->city = city;
-        this->pincode = pincode;
+        this->pin = pin;
+        this->country = country;
     }
 };
-class Student
-{
+class Student{
     public:
-    string name;
-    int id;
+    std::string name;
+    int no;
     Address ad;
-    void setS(int id,string name,Address ad)
-    {
-        this->id = id;
+    Student(int no,std::string name,Address ad){
         this->name = name;
+        this->no = no;
         this->ad = ad;
     }
-    void show()
-    {
-        cout<<"Name : "<<name<<"\t id :"<< id<< endl<< "City : "<< ad.city<<" "<<ad.pincode<< endl;
+    void Display(){
+        std::cout<<no<<' '<<name<<std::endl;
+        std::cout<<ad.country<<"\t"<<ad.city<<' '<<ad.pin<<std::endl;
     }
 };
-int main()
-{
+int main(){
     Address ad;
-    ad.setA(400043,"Mumbai");
-    Student st;
-    st.setS(03,"Abhay",ad);
-    st.show();
-
+    ad.setData(43,"Mumbai","India");
+    Student s(3,"MySelf",ad);
+    s.Display();
     return 0;
 }

@@ -1,13 +1,10 @@
-// learn c++
-// basics 
-
+// cpp - Basic
 // include header file
 #include<iostream>
 // using standard library function
 using namespace std;
 // main function
-int main()
-{
+int main(){
     // output stream with endline 
     cout<<"Hello World" <<endl;
 
@@ -34,20 +31,15 @@ int main()
     string s;
 
     // constant data 
-    // declare constant by const keyword
-    const int num;
+    const int num = 10;
 
     // pointer - stores address of variable
-    int* ptr = i;
-
-    // non data type pointer 
-    void* pointer = f; 
+    int*p = NULL;
+    *p = num;
+    void*ptr = NULL;
+    ptr = (void*)num;
 
     // operator :
-    // unary ,binary ,trinary
-    // arithamatic ,logical ,assignment ,bitwise ,relational
+    // unary ,binary ,trinary, arithamatic ,logical ,assignment ,bitwise ,relational
     // operator works same in all language
-
-    // structure and union in another file
-    
 }

@@ -1,10 +1,7 @@
-// learn c++
-// control statement
-
+//cpp - control statement
 #include<iostream>
 using namespace std;
-int main()
-{
+int main(){
     // if - else 
     int num;
     cout<<"enter a number"<<endl;
@@ -20,8 +17,7 @@ int main()
     // switch case
     cout<<"enter day number"<<endl;
     cin>>num;
-    switch(num)
-   { 
+    switch(num){
         case  1: {cout<<"monday"<<endl; break;}
         case  2: {cout<<"tuesday"<<endl; break;}
         case  3: {cout<<"wednesday"<<endl; break;}
@@ -37,15 +33,13 @@ int main()
     cin>>num;
     int i=1;
     cout<<"table of "<<num<<endl;
-    while(i<=10)
-    {
+    while(i<=10){
         cout<<num*i<<endl;
         i=i+1;   // increment operator 
     }
 
     // for loop
-    for(int j=1;j<=10;j++)
-    {
+    for(int j=1;j<=10;j++){
         cout<<num*j<<endl;
     }
 

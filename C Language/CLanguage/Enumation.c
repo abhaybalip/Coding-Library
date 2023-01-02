@@ -1,5 +1,4 @@
-// learn c
-// enume 
+// c - enume
 #include<stdio.h>
 // enum declaration
 // can be ordered or unordered

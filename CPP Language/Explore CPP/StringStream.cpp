@@ -1,4 +1,4 @@
-// learn cpp - string stream
+// cpp - string stream
 #include<iostream>
 #include<string.h>
 #include<sstream>
@@ -23,6 +23,6 @@ int main(){
     ss3<<String_Number;
     cout<<"Number Stored In String : "<<ss3.str()<<endl;
     ss3>>num2;
-    cout<<"The Number is : "<<num2;
+    cout<<"The Number in integer form : "<<num2;
     return 0;
 }

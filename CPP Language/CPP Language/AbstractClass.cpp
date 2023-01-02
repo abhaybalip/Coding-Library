@@ -1,25 +1,19 @@
-// learn c++
-// virtual function & abstract class
+// cpp - Abstract class
 #include<iostream>
-using namespace std;
-class Animal
-{
+class Parent_Class{
     public:
-    // virtual function
-    virtual void print();
+    virtual void display(){};
 };
-class Cat
-{
+class Child_Class: public Parent_Class{
     public:
-    void print()
-    {
-        cout<<"Cat Is Here"<<endl;
+    int num = 100;
+    std::string str = "hi";
+    void display(){
+        std::cout<<num <<" "<<str <<std::endl;
     }
 };
-int main()
-{
-    Cat c;
-    c.print();
-
+int main(){
+    Child_Class c;
+    c.display();
     return 0;
 }

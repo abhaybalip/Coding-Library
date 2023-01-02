@@ -1,9 +1,8 @@
-// learn cpp
-// structure in cpp
+// cpp - structure
 #include<iostream>
 struct Student{
-    char Name[10];
-    char Degree[5];
+    std::string Name;
+    std::string Degree;
     float ptr;
     Student(){
         std::cout<<"Student Structure Is Created"<<std::endl;

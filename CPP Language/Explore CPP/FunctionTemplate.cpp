@@ -1,29 +1,25 @@
-// learn c++
-// function templates
-
+// cpp -  function templates
 #include<iostream>  
 using namespace std;  
-// declaring function with template 
-// T is place holder of data type
-template<class T> T Add(T a,T b)
-{
+// function with template
+// here t is placeholder for data type
+template<class T>
+T Add(T a,T b){
     return (a + b);
 }
-template<class T> T Power(T a,T b)
-{
+template<class T>
+T Power(T a,T b){
     T ans = 1;
-    for(int i=0;i<b;i++)
-    {
+    for(int i=0;i<b;i++){
         ans *= a;
     }
     return ans;
 }
-template<class T,class R> void Display(T a,R b)
-{
+template<class T,class R>
+void Display(T a,R b){
     cout<< "Data : "<< a <<endl <<"Data : "<< b <<endl;
 }
-int main()  
-{  
+int main(){
     int a = 1,b = 4;
     cout<< Add(a,b) <<endl;
 
@@ -34,4 +30,4 @@ int main()
     float f = 2.5;
     Display(c,f);
     return 0;
-}  
+}

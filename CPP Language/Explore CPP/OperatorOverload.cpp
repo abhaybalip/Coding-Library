@@ -1,28 +1,24 @@
 #include<iostream>
 using namespace std;
-class Sample
-{
+class Sample{
     public:
     int num = 10;
-    void operator *()
-    {
+    void operator *(){
         num *= 10;
     }
-    void operator +()
-    {
+    void operator +(){
         num += 10;
     }
-    void display()
-    {
+    void display(){
         cout<<num <<endl;
     }
 };
-int main()
-{
-    Sample S;
-    *S;
-    +S;
-    S.display();
+int main(){
+    Sample s;
+    *s;
+    s.display();
+    +s;
+    s.display();
 
     return 0;
 }

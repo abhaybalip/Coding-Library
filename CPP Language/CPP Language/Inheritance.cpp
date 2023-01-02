@@ -1,26 +1,33 @@
-// learn c++
-// inheritance 
-
+// cpp - class inheritance
 #include<iostream>
-using namespace std;
-class parent
-{
+class Parent_Class{
     protected:
-    int n = 10;
-    string s = "abc";
-};
-class child : public parent
-{
     public:
-    void show()
-    {
-        cout<<"data of parent class : \n"<<n<<"\t"<<s<<endl;
+    int num = 100;
+    std::string str = "hello";
+};
+class Child_Class : public Parent_Class{
+    public:
+    void setData(int num,std::string str){
+        this->num = num;
+        this->str = str;
+    }
+    void display(){
+        std::cout<<num<<' '<<str<<std::endl;
     }
 };
-int main()
-{
-    parent p;
-    child c;
-    c.show();
+int main(){
 
+    Child_Class c;
+    std::cout<<"Parent class data : ";
+    c.display();
+    std::cout<<"child class data : ";
+    c.setData(0,"hi");
+    c.display();
+
+    // parent child reference
+    Parent_Class p = Child_Class();
+    std::cout<<"parent : "<<p.num<<' '<<p.str<<std::endl;
+
+    return 0;
 }
