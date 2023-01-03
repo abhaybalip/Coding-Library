@@ -16,6 +16,20 @@ class Child_Class : public Parent_Class{
         std::cout<<num<<' '<<str<<std::endl;
     }
 };
+class A{
+    public:
+    int num = 1;
+};
+class B{
+    public:
+    char ch = 'A';
+};
+class C:public B,public A{
+    public:
+    void display(){
+        std::cout<<"Data inherited from class A : num = "<<num<<"\nData inherited from class B : ch = "<<ch<<std::endl;
+    }
+};
 int main(){
 
     Child_Class c;
@@ -29,5 +43,8 @@ int main(){
     Parent_Class p = Child_Class();
     std::cout<<"parent : "<<p.num<<' '<<p.str<<std::endl;
 
+    std::cout<<"Multiple Inheritance : \n";
+    C c1;
+    c1.display();
     return 0;
 }
