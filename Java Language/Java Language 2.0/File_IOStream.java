@@ -1,6 +1,6 @@
 // java - File Management
 import java.io.*;
-class FileManagement{
+class File_IOStream{
     public static void main(String[] args) throws IOException {        
         // Fileinputstream input and output classes are used for input and output operation
         // these class are imported from java.io. package

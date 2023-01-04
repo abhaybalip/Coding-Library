@@ -9,14 +9,13 @@ int main(){
     ifstream fin;
     fin.open("test.txt");
 
-    // file is opened and data transfered to data string
+    // file is opened and its data transfered to data string
     fin >> data;
 
     cout<<"file is opened and data transfered to data string"<<endl;
     cout<<"data in data string : ";
     int index = 0;
     while(data[index]!='\0'){
-        /* code */
         cout<<data[index];
         index++;
     }
@@ -30,6 +29,8 @@ int main(){
     cout<<"again data is transfered to test file"<<endl;
     cout<<"Data in data string : "<<data <<endl;
 
+    fin.close();
+    fout.close();
     // here fin and fout object acts as reading and writing mode for file
     return 0;
 }
