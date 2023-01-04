@@ -1,6 +1,6 @@
 // java - Class Reflection
 import java.lang.Class;
-public class Reflection {
+public class Class{
     public static void main(String[] args){
         A a = new A(100,"Welcome");
         a.display();
