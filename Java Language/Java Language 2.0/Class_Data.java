@@ -1,11 +1,12 @@
 // java - Class Reflection
 import java.lang.Class;
-public class Class{
+class Class_Data{
     public static void main(String[] args){
         A a = new A(100,"Welcome");
         a.display();
         
-        // reflection using getclass methode
+        try{
+            // reflection using getclass methode
         Class a1 = a.getClass();
 
         // refletion using forname methode
@@ -17,6 +18,9 @@ public class Class{
         System.out.println("class name : "+a1.getName());
         System.out.println("class modifiers : "+a1.getModifiers());
         System.out.println("super class : "+a1.getSuperclass());
+        }catch(Exception e){
+            System.out.println("Error Occured !");
+        }
     }
 }
 class A{

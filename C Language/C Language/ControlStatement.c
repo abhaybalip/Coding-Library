@@ -1,32 +1,24 @@
-// learn c
-// control statement
+// c - control statement
 #include<stdio.h>
-void main()
-{
+void main(){
     int a;
     printf("Enter a Number \t");
     scanf("%d",&a);
 
     // else if ladder
-    {
-    if(a>0)
-    {
+    if(a>0){
         printf("a > 0 \n");
     }
-    else if(a<0)
-    {
+    else if(a<0){
         printf("a < 0 \n");
     }
-    else if(a==0)
-    {
+    else if(a==0){
         printf("a = 0 \n");
-    }
     }
 
     // switch case
     int num = 7;
-    switch(num)
-   { 
+    switch(num){
         case  1: {printf("monday \n");}
         case  2: {printf("tuesday \n");}
         case  3: {printf("wednesday\n");}
@@ -40,8 +32,7 @@ void main()
     // while loop
     printf("Table of 10 using while loop \n");
     int n=10,i=0;
-    while(i<=10)
-    {
+    while(i<=10){
         printf("%d * %d = %d \n",n,i,n*i);
         i++;
     }
@@ -49,9 +40,13 @@ void main()
     printf("Table of 20 using for loop \n");
     n = 20;
     // for loop
-    for(int k=0;k<=10;k++)
-    {
+    for(int k=0;k<=10;k++){
         printf("%d * %d = %d \n",n,k,n*k);
     }
 
+    printf("line 1");
+    goto label;
+    printf("line 2");
+    label:
+    printf("line 3");
 }

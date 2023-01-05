@@ -1,8 +1,6 @@
-// learn c
-// pointer
+// c - pointer
 #include<stdio.h>
-void main()
-{
+void main(){
     // pointer declaration
     int* p;
     // assign value or variable

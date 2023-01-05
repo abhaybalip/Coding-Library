@@ -1,9 +1,6 @@
 // c - enume
 #include<stdio.h>
-// enum declaration
-// can be ordered or unordered
-enum week
-{
+enum week{
     monday = 1,
     tuesday,
     wednesday,
@@ -12,8 +9,7 @@ enum week
     saturday,
     sunday
 };
-void main()
-{
+void main(){
     printf("welcome \n");
     // creating enum
     enum week w = monday;

@@ -1,9 +1,6 @@
-// learn c
-// include standard I/O header file
+// c - Basic
 #include<stdio.h>
-// start of main function
-void main()
-{
+void main(){
     // output via printf function
     printf("hello world \n");
 

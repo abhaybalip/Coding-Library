@@ -22,9 +22,10 @@ class B extends A{
     @Deprecated
     void test2(){
         Integer i = new Integer(10);
+        System.out.println(i);
     }
     @SuppressWarnings("No return !")
     int test3(){
-        return ;
+        return 0;
     }
 }

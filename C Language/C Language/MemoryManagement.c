@@ -1,4 +1,4 @@
-// c lnguage - memory management
+// c - memory management
 #include<stdio.h>
 #include<stdlib.h>
 void main(){
