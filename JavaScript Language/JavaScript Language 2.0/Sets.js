@@ -1,5 +1,4 @@
     // java script - sets
-    
     // funtion to print given data
     function println(params) {
         console.log(params);
