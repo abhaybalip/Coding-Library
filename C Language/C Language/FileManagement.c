@@ -23,11 +23,11 @@ int main(){
 
 
     // string methode for file
-    f1 = fopen("C:\\Users\\abhay\\OneDrive\\Documents\\GitHub\\test.txt","w+");
+    f1 = fopen("C:\\Users\\abhay\\OneDrive\\Documents\\GitHub\\test2.txt","w+");
     fputs("Hello World",f1);
     fclose(f1);
 
-    f2 = fopen("C:\\Users\\abhay\\OneDrive\\Documents\\GitHub\\test.txt","r+");
+    f2 = fopen("C:\\Users\\abhay\\OneDrive\\Documents\\GitHub\\test2.txt","r+");
     fgets(ch,12,f2);
     int index=0;
     while(ch[index]!='\0'){
