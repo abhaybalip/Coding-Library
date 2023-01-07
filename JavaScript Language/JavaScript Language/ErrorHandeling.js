@@ -1,49 +1,45 @@
     // javascript - Error Handeling
-    // function to write given data on page
     function println(params){
         console.log(params);
     }
-    println("Hello World");
-
-    // error handeling
-    // in built error object handles errors during programming
-    // user defined - try catch methode
-    // code that can generate error is in try block
-    // if error is caught catch block code will run instead
-    // example
-    function division(a,b){
-        if(b==0){
-            throw("Non-Zero Number Required !");
-        }
-        else return a/b;
-    }
-    var num = division(10,2);
-    println(num);
-
-    // divide by 0
-    try{
-        var num = division(1,0);
-    }
-    catch{
-        println("Non-Zero Number Required !");
-    }
-
-    // try - catch - finally
-    class A{
-        constructor(){
-            println("Class A instance created");
-        }
-        methode(){
-            throw("error occured");
-        }
+    println('Hello World');
+    function div(a,b){
+        return a/b;
     }
     try{
-        a1 = new A;
-        a1.methode();
+        // undeclared varibles
+        a = b;
+        println(a/b);
     }
-    catch{
-        println("Error Occured");
+    catch(error){
+        println('Errore Occured !');
     }
-    finally{
-        println("Contuinue Programming");
+
+    // example 2
+    try{
+        println('Try block which generate error ');
+        println(div(a))
+    }catch(error){
+        println('This is catch block !\nexecutes when error occures')
+    }finally{
+        println('This is finally block !\nExecutes at any case')
+    }
+    
+    function factorial(num){
+        if(num<0) throw('Number less than 0 !');
+        else{
+            var result = 0
+            while(num>0){
+                result *= num;
+                num--;
+            }
+            return result;
+        }
+    }
+
+    // example 3
+    try{
+        var n1 = factorial(-1);
+    }catch(error){
+        println('error occured !'+error);
     }
