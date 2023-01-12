@@ -1,4 +1,4 @@
-# python - derived data type
+# python - data type
 
 # list - index 0 ,mutable
 from ctypes import sizeof
@@ -38,5 +38,3 @@ print(dic.__sizeof__() )
 
 dict[2] = 'S'
 print(dict[2])
-
-
