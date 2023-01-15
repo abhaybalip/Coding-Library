@@ -35,5 +35,8 @@ int main(){
         index++;
     }
 
+    // write array to file
+    char str[] = "Hello User";
+    fwrite(str,1,sizeof(str),f2);
     return 0;
 }
