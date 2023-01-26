@@ -1,4 +1,4 @@
--- MySql - Like Operator
+-- sql - Like Operator
 CREATE TABLE Test(
     Id int,
     code char(10)

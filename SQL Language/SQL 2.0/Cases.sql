@@ -1,6 +1,6 @@
--- sql - GropuBy Operator
+-- sql - Cases
 CREATE TABLE Test(
-    Id int,
+    id int,
     user char(10),
     lev int
 );
@@ -10,8 +10,16 @@ INSERT INTO Test VALUES(30,"user 3",1);
 INSERT INTO Test VALUES(40,"user 4",2);
 INSERT INTO Test VALUES(50,"user 5",2);
 INSERT INTO Test VALUES(60,"user 6",2);
+INSERT Into Test(id,user) value(70,"user 7")
 
-SELECT count(user),lev FROM Test GROUP BY(lev);
-SELECT count(user),lev FROM Test GROUP BY(lev) ORDER BY count(Id) ASC;
+SELECT * FROM Test;
+
+SELECT id,user,
+CASE
+    when lev = 0 then "Level is 0"
+    when lev >0 then "level is >0"
+    else "error value !"
+END AS 'case statement'
+FROM Test;
 
 DROP TABLE Test;

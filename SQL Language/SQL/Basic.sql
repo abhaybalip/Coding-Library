@@ -1,5 +1,4 @@
--- Sql - Basics
-
+-- sql - Basics
 -- creating database
 CREATE DATABASE Test_DataBase;
 
@@ -11,7 +10,6 @@ CREATE TABLE Personal_Info(
 );
 
 -- add data to table
-
 INSERT INTO personal_info VALUES(10,"User1",20);
 INSERT INTO personal_info VALUES(20,"User2",20);
 INSERT INTO personal_info VALUES(30,"User3",20);

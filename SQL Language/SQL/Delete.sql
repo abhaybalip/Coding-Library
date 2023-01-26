@@ -1,4 +1,4 @@
--- Sql - Delete Command
+-- sql - Delete Command
 CREATE TABLE Test(
     Id int,
     name char(10)

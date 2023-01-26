@@ -1,4 +1,4 @@
--- -- MySql - Where
+-- sql - Where
 CREATE TABLE Test(
     id int,
     user char(10),

@@ -1,4 +1,4 @@
--- MySql - Position Operator
+-- sql - Position Operator
 CREATE TABLE Test(
     Id int,
     user char(10)

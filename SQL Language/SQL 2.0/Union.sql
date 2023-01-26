@@ -1,4 +1,4 @@
--- MySql - Union Operator
+-- sql - Union Operator
 -- applies on columns having same data type
 CREATE TABLE Test(
     Id int,

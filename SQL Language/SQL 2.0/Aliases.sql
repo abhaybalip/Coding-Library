@@ -1,4 +1,4 @@
--- MySql - Aliases
+-- sql - Aliases
 CREATE TABLE Test(
     Id int,
     user char(10),

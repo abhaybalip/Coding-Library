@@ -1,4 +1,4 @@
--- Sql - Data Order
+-- sql - Data Order
 create table Test(
     id int,
     user char(10),

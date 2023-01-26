@@ -1,4 +1,4 @@
--- MySql - Joins
+-- sql - Joins
 -- Inner Join , Outer Join , Left Join , Right Join
 CREATE TABLE Test(
     Id int,

@@ -1,4 +1,4 @@
--- MySql - Exist , Any , All Operator
+-- sql - Exist , Any , All Operator
 -- returns boolean value
 CREATE TABLE Test(
     Id int,

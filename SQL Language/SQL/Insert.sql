@@ -1,4 +1,4 @@
--- Sql - Insert operation
+-- sql - Insert operation
 create table Test(
     id int,
     user char(10),

@@ -1,4 +1,4 @@
--- MySql - Math Function
+-- sql - Math Function
 CREATE TABLE Test(
     Id int,
     user char(10),

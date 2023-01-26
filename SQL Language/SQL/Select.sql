@@ -1,4 +1,4 @@
--- MySql - Selection
+-- sql - Selection
 
 CREATE TABLE Person(
     Id int,
