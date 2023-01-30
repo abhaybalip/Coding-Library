@@ -15,6 +15,10 @@ Delete from Test where Id = 10;
 delete from Test where Id = 20 && name = "user 2";
 
 -- delete all records
-delete from Test;
+delete * from Test;
 
+-- delete table
 DROP TABLE Test;
+
+-- delete datbase
+DROP DATABASE Test_database;

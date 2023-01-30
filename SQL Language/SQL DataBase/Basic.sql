@@ -19,3 +19,9 @@ SELECT * FROM personal_info;
 
 -- delete column
 delete from Personal_Info where Id = 10
+
+-- delete table
+drop table Personal_Info;
+
+-- delete database
+drop DATABASE Test_DataBase;
