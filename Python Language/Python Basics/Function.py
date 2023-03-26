@@ -18,17 +18,17 @@ def factorial(x)   :
 # function call
 print("display function : ",display(),"\n Sum function : ",sum(1,1),"\n Factorial function : ",factorial(5))
 
-# lambda function
-# make mathematical function and return output
-print("Welcome To python")
+# multiple arguments
+def sum(*num):
+    result = 0
+    for i in num:
+        result += i
+    return result
 
-# declare lambda function 
-sum4 = lambda x : x + 4
-print(sum4(1))
+print(sum(1,2),sum(1,3,5))
 
-# recursion
-fact = lambda x : 1 if(x<=1) else x*fact(x-1)
-print(fact(5))
+def intro(**data):
+    for key,value in data.items():
+        print(key,' : ',value)
 
-Binomial = lambda x,a,b,c : (a*x*x + b*x + c)
-print(Binomial(2,2,2,2))
+intro(name='name',surname='sn',age=18,gender='m')
