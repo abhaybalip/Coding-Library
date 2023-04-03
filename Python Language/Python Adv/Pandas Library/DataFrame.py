@@ -23,5 +23,5 @@ print('df2 = \n',df2)
 
 # add new dict to df2
 df2 = df2.append(info2, ignore_index=True)
-
+df2 = df2.append(info3, ignore_index=True)
 print('new df2 = \n',df2)
