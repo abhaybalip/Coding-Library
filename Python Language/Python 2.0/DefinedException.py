@@ -1,6 +1,6 @@
 # python - UserDefined Exception
 # extends exception class
-class InvalidAgeException:
+class InvalidAgeException(Exception):
     pass
 
 try:
