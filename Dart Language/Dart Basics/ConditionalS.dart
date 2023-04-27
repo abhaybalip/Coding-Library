@@ -1,3 +1,4 @@
+// Dart - Control Statement
 void main(){
   bool b = true;
   if(b){
@@ -14,6 +15,11 @@ void main(){
   }
 
   for(int i=0;i<10;i++){
+    print(i);
+  }
+
+  var l = [0,1,2,3,4];
+  for(var i in l){
     print(i);
   }
 }
