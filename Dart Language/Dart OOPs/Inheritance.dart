@@ -1,19 +1,24 @@
 // Dart - OOPS - Inheritance
-void main(List<String> args) {  
-  var p = new Child_Class();
-  print(p.get());
-  print(p.s);
+void main(List<String> args){
+  var c = new Parent_Class();
+  var c1 = new Child_Class();
+  c.display();
+  c1.display();
 }
 
 class Parent_Class{
+  // class data
   int num = 100;
   String s = 'Hi';
 
-  int get(){
-    return num+10;
+  // class methode
+  void display(){
+    print(this.num);
+    print(this.s);
   }
-}
 
+}
 class Child_Class extends Parent_Class{
-  
+  int num = 200;
+  String s = 'Hello';
 }
