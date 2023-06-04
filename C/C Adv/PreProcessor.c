@@ -3,6 +3,7 @@
 // header file inclusion
 #include<stdio.h>
 #include<stdbool.h>
+
 // define data as keyword
 #define num 100
 #define AreaCircle(r) (22*r*r/7)
