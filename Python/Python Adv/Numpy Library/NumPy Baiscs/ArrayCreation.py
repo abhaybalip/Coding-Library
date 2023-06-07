@@ -5,14 +5,14 @@ import numpy as np;
 # array is declared by passing data with array function
 l = [1,2,3,4,5,6,7]
 a0 = np.array([1,2,3,4,5])
-print(a0)
-print(type(a0))
+print('Array : ',a0,'\n\tsize : ',a0.size,'\n\tshape : ',a0.shape,'\n\tndim : ',a0.ndim)
+print('Data Type : ',type(a0))
 
 a1 = np.array(l)
-print(a1)
+print('Array : ',a1)
 
 a2 = np.array(l,dtype=int)
-print(a2)
+print('Array : ',a2)
 
 a3 = np.array([[1,3,4],[5,6,3]])
-print(a3,'size = ',a3.size,'\n shape = ',a3.shape,'\n dim = ',a3.ndim)
+print('Array : ',a3,'\n\tsize = ',a3.size,'\n\tshape = ',a3.shape,'\n\tdim = ',a3.ndim)

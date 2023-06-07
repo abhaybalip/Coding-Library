@@ -32,6 +32,8 @@ int main(){
     // origin : seek_set , seek_cur , seek_end
     fseek(file,0,SEEK_SET);
 
+    // delete file
+    remove("TestFile.txt")
     free(arr);
     fclose(file);
 

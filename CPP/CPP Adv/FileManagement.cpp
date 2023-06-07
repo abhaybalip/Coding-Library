@@ -29,6 +29,9 @@ int main(){
     cout<<"again data is transfered to test file"<<endl;
     cout<<"Data in data string : "<<data <<endl;
 
+    // delete file
+    std::remove("test.txt")
+    
     fin.close();
     fout.close();
     // here fin and fout object acts as reading and writing mode for file
