@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt;
 import numpy as np;
 
+# Create Figure and Axis
 fig, ax = plt.subplots()
 
 print(type(fig))
