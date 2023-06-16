@@ -11,11 +11,11 @@ void print(std::string msg){
     std::cout<<msg<<std::endl;
 }
 // return type function
-int multiply(int a,int b){
+int multiply(int a,int b=1){
     return a*b;
 }
-// recursive function
-int factorial(int x){
+// recursive function - Default Argument
+int factorial(int x=5){
     if(x>0) return x*factorial(x-1);
     else return 1;
 }
