@@ -19,6 +19,6 @@
     console.log(num+"     ");
     console.log(name);
 
-    // oerator - java script has all common operators as other language
+    // operator - java script has all common operators as other language
     // operator type - 
     // arithamatic,logical,relational,bitwise,assignment,special
