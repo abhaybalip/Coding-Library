@@ -17,3 +17,10 @@ db.sales.aggregate( [ { $project: { date: 1, item: 1, total: { $multiply: [ "$pr
 
 // $divide Opr
 db.planning.aggregate( [ { $project: { name: 1, workdays: { $divide: [ "$hours", 8 ] } } } ] )
+
+// $mod Opr
+db.planning.aggregate(
+    [
+      { $project: { remainder: { $mod: [ "$hours", "$tasks" ] } } }
+    ]
+) 
