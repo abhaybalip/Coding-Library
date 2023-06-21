@@ -1,5 +1,0 @@
-show (dbs);
-
-use (test);
-
-show (Collections);
