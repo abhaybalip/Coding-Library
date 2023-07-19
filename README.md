@@ -1,2 +1,2 @@
 # Language Library
- Library for Different Computer Languages
+ Library of Computer Languages
