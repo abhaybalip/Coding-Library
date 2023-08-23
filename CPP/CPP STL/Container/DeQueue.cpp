@@ -1,12 +1,13 @@
-#include<iostream>
-#include<deque>
+#include <iostream>
+#include <deque>
 // deque declaration
-std::deque<int> dq,dq1{1,2,5,2,5};
+std::deque<int> dq, dq1{1, 2, 5, 2, 5};
 
-int main(){
+int main()
+{
     // dequeu methodes
 
-    dq.emplace(dq.begin(),0);
+    dq.emplace(dq.begin(), 0);
     dq.emplace_back(20);
     dq.emplace_front(2);
 

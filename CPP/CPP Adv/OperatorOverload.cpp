@@ -1,19 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Sample{
-    public:
+class Sample
+{
+public:
     int num = 10;
-    void operator *(){
+    void operator*()
+    {
         num *= 10;
     }
-    void operator +(){
+    void operator+()
+    {
         num += 10;
     }
-    void display(){
-        cout<<num <<endl;
+    void display()
+    {
+        cout << num << endl;
     }
 };
-int main(){
+int main()
+{
     Sample s;
     *s;
     s.display();

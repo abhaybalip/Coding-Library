@@ -1,18 +1,18 @@
 // cpp - Namespace
-#include<iostream>
+#include <iostream>
 using namespace std;
-namespace one 
+namespace one
 {
     void print()
     {
-        cout<<"print function with namespace"<<endl;
+        cout << "print function with namespace" << endl;
     }
 }
 namespace two
 {
     void print()
     {
-        cout<<"print function without namespace"<<endl;
+        cout << "print function without namespace" << endl;
     }
 }
 using namespace one;

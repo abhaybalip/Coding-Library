@@ -1,10 +1,18 @@
 // cpp - enume
-#include<iostream>
-enum week{
-    monday = 1,tuesday,wednesdsy,thursday,friday,saturday,sunday
+#include <iostream>
+enum week
+{
+    monday = 1,
+    tuesday,
+    wednesdsy,
+    thursday,
+    friday,
+    saturday,
+    sunday
 };
-int main(){
+int main()
+{
     week w = monday, w2 = sunday;
-    std::cout<<w<<' '<<w2;
+    std::cout << w << ' ' << w2;
     return 0;
 }

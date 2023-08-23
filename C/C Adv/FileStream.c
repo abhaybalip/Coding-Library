@@ -1,11 +1,12 @@
-#include<stdio.h>
-int main() {
+#include <stdio.h>
+int main()
+{
     // opening file
-    FILE *f1 = fopen("test.txt","w+");
-    FILE *f2 = fopen("test.txt","r+");
+    FILE *f1 = fopen("test.txt", "w+");
+    FILE *f2 = fopen("test.txt", "r+");
 
     int n = 10, n2, n3;
-    char c = 'A', c2, c3;\
+    char c = 'A', c2, c3;
 
     // write to file
     fprintf(f1, "%d %c", n, c);

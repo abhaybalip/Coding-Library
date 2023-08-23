@@ -1,8 +1,9 @@
-#include<iostream>
-#include<stack>
-int main(){
+#include <iostream>
+#include <stack>
+int main()
+{
     // stack declaration
-    std::stack<int> s,s2;
+    std::stack<int> s, s2;
 
     // stack methodes
     s.emplace(1);

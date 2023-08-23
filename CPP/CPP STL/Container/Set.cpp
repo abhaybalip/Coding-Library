@@ -1,9 +1,10 @@
 // cpp - stl - set
-#include<iostream>
-#include<set>
-int main(){
+#include <iostream>
+#include <set>
+int main()
+{
     // set declaration
-    std::set<int> s,s1;
+    std::set<int> s, s1;
 
     // std::template<
     //     class T,
@@ -26,5 +27,5 @@ int main(){
 
     std::set<int>::key_compare comp = s.key_comp();
     std::set<int>::value_compare comp2 = s.value_comp();
-    return  0;
+    return 0;
 }

@@ -1,6 +1,7 @@
 // c - enume
-#include<stdio.h>
-enum week{
+#include <stdio.h>
+enum week
+{
     monday = 1,
     tuesday,
     wednesday,
@@ -9,9 +10,10 @@ enum week{
     saturday,
     sunday
 };
-void main(){
+void main()
+{
     printf("welcome \n");
     // creating enum
     enum week w = monday;
-    printf("%d",w);
+    printf("%d", w);
 }
