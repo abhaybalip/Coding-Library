@@ -1,5 +1,5 @@
-#include<iostream>
-#include<sstream>
+#include <iostream>
+#include <sstream>
 int main(int argc, char const *argv[])
 {
     std::stringstream ss;
@@ -8,14 +8,16 @@ int main(int argc, char const *argv[])
     ss.put('A');
     // ss.get(ch);
 
-    std::cout<<(char)ss.get() <<'\n';
+    std::cout << (char)ss.get() << '\n';
 
-    ss<<"test-string";
+    ss << "test-string";
 
-    std::cout<<(char)ss.peek() <<'\n';
+    std::cout << (char)ss.peek() << '\n';
 
-    if(ss.eof()) printf("Reached end of stream \n");
-    else printf("stream end is not reached \n");
+    if (ss.eof())
+        printf("Reached end of stream \n");
+    else
+        printf("stream end is not reached \n");
 
     return 0;
 }

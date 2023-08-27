@@ -1,20 +1,14 @@
 // java - Array
-import java.util.Scanner;
 public class Array {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        // array object declaration
-        int arr[] = new int[10];
-        for(int i=0;i<10;i++){
-            arr[i] = i*5;
-            System.out.print(arr[i]+" ");
-        }
-        
-        // data accessing - using index number inside square box
-        int num = arr[4];
-        System.out.println(num);
-        arr[5] = 0;
+    public static void main(String[] args) {
+        // array declartion
+        int size = 5;
+        int arr[] = new int[size];
+        int arr1[] = { 1, 2, 3, 4, 5 };
 
-        sc.close();
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i] + " ");
+        }
+
     }
 }

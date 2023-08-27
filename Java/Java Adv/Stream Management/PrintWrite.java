@@ -2,7 +2,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-public class File_PrintWrite {
+public class PrintWrite {
     public static void main(String[] args) throws IOException{
         String data = "Hello from java program";
         try{
