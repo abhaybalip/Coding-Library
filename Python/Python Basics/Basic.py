@@ -28,3 +28,6 @@ strs    = str('string')
 
 # list of keywords in python
 print(keyword.kwlist)
+
+# delete data
+del  a,b,m,n,integer,floatp,strs

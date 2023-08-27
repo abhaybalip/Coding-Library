@@ -1,35 +1,20 @@
-# python - OOP - Class & Object
+# python - oop - class & constructor
 
-# Declaring Class
-class Student: 
-    # Methode of Class 
-    # Self parameter - refers own data
-    def setData(self,id,Name):
-        self.id   = id
-        self.Name = Name
+class My_Class:
+    def __init__(self) -> None:
+        pass
 
-    def Display(self):
-        print("Id :",self.id," Name : ",self.Name)
+    # class data
+    id = 100
+    s = 'my string'
+    # class methode
+    def setData(self,id,s):
+        self.id = id
+        self.s = s
+    def display(self):
+        print('id= ',self.id,' string= ',self.s)
 
-# Creat Instance of class
-S = Student()
-S.setData(3,"ABHAY")
-S.Display()
-
-class Teacher:
-    Name = "Place_Holder"
-    id   = 0
-    def setData(self,Name,id):
-        self.Name = Name
-        self.id   = id
-    def Display(self):
-        print("Name : ",self.Name," Id : ",self.id)
-
-no = int(input("Enter Id : "))
-name = str(input("Enter Name : ")) 
-T = Teacher()
-print("Before Using Set Methode : ")
-T.Display()
-T.setData(name,no)
-print("After Using Set Methode")
-T.Display()
+# class instance
+mc = My_Class()
+mc.setData(10,'name')
+mc.display()
