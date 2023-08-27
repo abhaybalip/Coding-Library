@@ -6,7 +6,7 @@ def greet(name):
 
     say_Hello();
 
-greet("abhay")
+greet("my_name")
 
 def calculate(num):
     def sum(n):

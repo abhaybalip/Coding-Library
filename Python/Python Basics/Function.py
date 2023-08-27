@@ -1,13 +1,12 @@
 # python - function
+# In python function is an object
 
 # function definition
 def display()  :
     return ("Welcome")
+display()
 
 # function with parameter
-def sum(x,y)   :
-    return (x+y)
-
 def factorial(x)   :
     ans = 1
     i = 1
@@ -16,19 +15,19 @@ def factorial(x)   :
     return ans
 
 # function call
-print("display function : ",display(),"\n Sum function : ",sum(1,1),"\n Factorial function : ",factorial(5))
+print("factorial: ",factorial(5))
 
-# multiple arguments
+# multiple arguments :
+# list of arguments -
 def sum(*num):
     result = 0
     for i in num:
         result += i
     return result
-
 print(sum(1,2),sum(1,3,5))
 
+# set of arguments -
 def intro(**data):
     for key,value in data.items():
         print(key,' : ',value)
-
 intro(name='name',surname='sn',age=18,gender='m')
