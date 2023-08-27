@@ -1,6 +1,6 @@
 // c - structure
 #include <stdio.h>
-struct std
+struct my_namespace
 {
     int num;
     char ch;
@@ -9,7 +9,7 @@ struct std
 void main()
 {
     // structure object
-    struct std s1;
+    struct my_namespace s1;
     s1.num = 10;
     s1.ch = 'A';
 
