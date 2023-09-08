@@ -1,4 +1,5 @@
 // Node js - Assertion
+// npm install assert
 function print(msg){
     console.log(msg)
 }
