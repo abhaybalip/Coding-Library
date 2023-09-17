@@ -1,5 +1,4 @@
 // Node js - Process
-
 function print(msg){
     console.log(msg)
 }
