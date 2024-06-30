@@ -1,0 +1,27 @@
+# Common build files
+*.log
+*.out
+*.err
+*.crt
+*.key
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+
+# C++
+build/
+*.o
+*.so
+
+# Webpack
+dist/
+webpack.config.js
