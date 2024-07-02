@@ -1,7 +1,6 @@
 // TS - Tuple 
 // A tuple is a typed array with a pre-defined length and types for each index.
 
-
 // define tuple
 let tuple: [number, boolean, String]
 
@@ -10,8 +9,8 @@ let tuple: [number, boolean, String]
 tuple = [10, true, 'str']
 
 tuple.push('hi')
-
 console.log(tuple)
+
 
 
 // readonly property
