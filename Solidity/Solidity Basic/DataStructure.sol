@@ -18,6 +18,14 @@ contract SampleContract {
     }
     person p = person(10, "");
 
+    // enum
+    enum color {
+        red,
+        green,
+        blue
+    }
+    color c = color.red;
+
     constructor() {
         name[10] = "";
     }
